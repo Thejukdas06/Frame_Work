@@ -16,8 +16,10 @@ public class Base_Test implements Framework_Const
 	public void OpenAppln()
 	{
 		System.setProperty(chrome_key,chrome_value);
+		//To launch browser
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
+		//To enter url
 		driver.get(base_url);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		}
